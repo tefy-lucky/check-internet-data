@@ -18,7 +18,7 @@ password.send_keys(config["default"]["password"])
 login = driver.find_element_by_id("login_button")
 login.click()
 
-time.sleep(10)
+driver.implicitly_wait(10)
 
 parent = driver.find_element_by_xpath('//span[@class="icom-orange_Coin"]/following-sibling::div')
 date = parent.find_element_by_class_name("kpi-title")
